@@ -12,9 +12,9 @@ type ResultsProps = {
 
 const Results = (props: ResultsProps) => {
     return (
-        <div>          
+        <>          
             {props.results.country && 
-                <div>
+                <>
                     <div className="results-country">{props.results.country}</div>
                     <div className="results-city">{props.results.cityName}</div>
                     <div className="results-temp">{props.results.temperature} <span>°C</span></div>
@@ -23,9 +23,9 @@ const Results = (props: ResultsProps) => {
 
 <span>{props.results.conditionText}</span>
                     </div>
-                </div>
+                </>
             }
-        </div>
+        </>
     )
 }
 
